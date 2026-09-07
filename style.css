@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #090909;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #ff5c00;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ff5c00;
+}
+
+.nav-btn,
+.primary-btn {
+    border: none;
+    background: #ff5c00;
+    color: white;
+
+    padding: 13px 25px;
+
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover,
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.25)
+        ),
+        url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.small-heading,
+.section-label {
+    color: #ff5c00;
+
+    font-weight: 800;
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Anton", sans-serif;
+
+    font-size: clamp(55px, 8vw, 105px);
+
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+}
+
+.hero h1 span {
+    color: #ff5c00;
+    display: block;
+}
+
+.hero-text {
+    max-width: 550px;
+
+    margin: 25px 0;
+
+    color: #ccc;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.secondary-btn {
+    padding: 12px 25px;
+
+    border: 1px solid #777;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    border-color: #ff5c00;
+    color: #ff5c00;
+}
+
+.hero-badge {
+    position: absolute;
+
+    right: 8%;
+    bottom: 12%;
+
+    width: 130px;
+    height: 130px;
+
+    border: 2px solid #ff5c00;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.hero-badge strong {
+    font-family: "Anton";
+    font-size: 35px;
+    color: #ff5c00;
+}
+
+.hero-badge span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #111;
+
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.stats div {
+    text-align: center;
+
+    padding: 35px 10px;
+
+    border-right: 1px solid #222;
+}
+
+.stats strong {
+    display: block;
+
+    font-family: "Anton";
+
+    font-size: 40px;
+
+    color: #ff5c00;
+}
+
+.stats span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 120px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+}
+
+.about-content h2,
+.section-heading h2,
+.contact h2,
+.cta h2 {
+    font-family: "Anton";
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.about-content h2 span,
+.section-heading h2 span,
+.contact h2 span,
+.cta h2 span {
+    color: #ff5c00;
+}
+
+.about-content > p {
+    color: #aaa;
+    max-width: 550px;
+}
+
+.features {
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.features div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    padding: 15px;
+
+    background: #111;
+}
+
+.features b {
+    color: #ff5c00;
+}
+
+
+/* PROGRAMS */
+
+.programs {
+    padding: 120px 8%;
+    background: #111;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+
+    margin: auto auto 60px;
+}
+
+.section-heading > p:last-child {
+    color: #888;
+}
+
+.program-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.program-card {
+    min-height: 300px;
+
+    padding: 35px 25px;
+
+    background: #090909;
+
+    border: 1px solid #252525;
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff5c00;
+}
+
+.program-number {
+    color: #ff5c00;
+
+    font-family: "Anton";
+
+    font-size: 35px;
+}
+
+.program-card h3 {
+    font-family: "Anton";
+
+    font-size: 30px;
+
+    margin: 25px 0 15px;
+}
+
+.program-card p {
+    color: #888;
+    font-size: 14px;
+}
+
+.program-card a {
+    position: absolute;
+
+    bottom: 25px;
+
+    color: #ff5c00;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* MOTIVATION */
+
+.motivation {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.85)
+        ),
+        url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.motivation-content {
+    max-width: 900px;
+}
+
+.motivation-content > p:first-child {
+    color: #ff5c00;
+
+    font-family: "Anton";
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+}
+
+.motivation h2 {
+    font-family: "Anton";
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1;
+
+    margin: 15px 0;
+}
+
+.motivation h2 span {
+    color: #ff5c00;
+}
+
+.quote {
+    color: #bbb;
+}
+
+
+/* TRAINERS */
+
+.trainers {
+    padding: 120px 8%;
+}
+
+.trainer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.trainer-card {
+    background: #111;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.trainer-card:hover img {
+    transform: scale(1.05);
+}
+
+.trainer-info {
+    padding: 20px;
+}
+
+.trainer-info h3 {
+    font-family: "Anton";
+    font-size: 28px;
+}
+
+.trainer-info p {
+    color: #ff5c00;
+}
+
+
+/* PLANS */
+
+.plans {
+    padding: 120px 8%;
+
+    background: #111;
+}
+
+.plan-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.plan-card {
+    background: #090909;
+
+    padding: 40px 30px;
+
+    border: 1px solid #292929;
+
+    position: relative;
+}
+
+.plan-card.popular {
+    border-color: #ff5c00;
+
+    transform: scale(1.04);
+}
+
+.popular-tag {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    background: #ff5c00;
+
+    padding: 7px 15px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.plan-name {
+    color: #ff5c00;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.plan-card h3 {
+    font-family: "Anton";
+
+    font-size: 50px;
+
+    margin: 20px 0;
+}
+
+.plan-card h3 small {
+    font-family: "Inter";
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+.plan-card ul {
+    list-style: none;
+
+    color: #aaa;
+
+    line-height: 2.4;
+
+    margin-bottom: 25px;
+}
+
+.plan-card button {
+    width: 100%;
+
+    padding: 14px;
+
+    background: transparent;
+
+    border: 1px solid #555;
+
+    color: white;
+
+    font-weight: 800;
+}
+
+.plan-card button:hover {
+    background: #ff5c00;
+    border-color: #ff5c00;
+}
+
+
+/* CTA */
+
+.cta {
+    padding: 120px 8%;
+
+    text-align: center;
+
+    background: #090909;
+}
+
+.cta > div {
+    max-width: 850px;
+    margin: auto;
+}
+
+.cta p:not(.section-label) {
+    color: #888;
+
+    margin-bottom: 30px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 100px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    background: #111;
+}
+
+.contact-info > p:not(.section-label) {
+    color: #888;
+
+    max-width: 500px;
+}
+
+.contact-details {
+    margin-top: 30px;
+
+    color: #aaa;
+
+    line-height: 2;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #090909;
+
+    border: 1px solid #292929;
+
+    color: white;
+
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #ff5c00;
+}
+
+form button {
+    padding: 15px;
+
+    background: #ff5c00;
+
+    color: white;
+
+    border: none;
+
+    font-weight: 800;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 8%;
+
+    background: #050505;
+
+    text-align: center;
+
+    color: #777;
+}
+
+.footer-logo {
+    font-family: "Anton";
+
+    font-size: 30px;
+
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+.socials {
+    margin: 20px 0;
+    color: #aaa;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #25D366;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trainer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card.popular {
+        transform: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 120px 6% 80px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about,
+    .programs,
+    .trainers,
+    .plans,
+    .contact,
+    .cta {
+        padding: 80px 6%;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .program-grid,
+    .trainer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-card img {
+        height: 400px;
+    }
+
+    .hero-badge {
+        display: none;
+    }
+
+}
