@@ -1,630 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Dhruv Fitness | Transform Your Body</title>
-
-    <meta name="description"
-        content="Dhruv Fitness - Build strength, discipline and confidence.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhruv Fitness | Power • Discipline • Transformation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-
 <header class="navbar">
-
-    <div class="logo">
-        <span>D</span>HRUV FITNESS
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#programs">Programs</a>
-        <a href="#trainers">Trainers</a>
-        <a href="#plans">Membership</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <button class="nav-btn" onclick="scrollToJoin()">
-        JOIN NOW
-    </button>
-
+  <a class="logo" href="#home"><span>D</span>HRUV FITNESS</a>
+  <nav>
+    <a href="#home">Home</a><a href="#programs">Programs</a><a href="#trainers">Trainers</a>
+    <a href="#transformation">Transformation</a><a href="#plans">Membership</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-btn" onclick="joinGym()">JOIN NOW</button>
 </header>
 
-
-<!-- HERO -->
-
 <section class="hero" id="home">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="small-heading">
-            DISCIPLINE • POWER • TRANSFORMATION
-        </p>
-
-        <h1>
-            BUILD THE
-            <span>STRONGEST</span>
-            VERSION OF YOU.
-        </h1>
-
-        <p class="hero-text">
-            Train harder. Stay disciplined. Become stronger.
-            Your transformation starts here.
-        </p>
-
-        <div class="hero-buttons">
-
-            <button class="primary-btn" onclick="scrollToJoin()">
-                START TRAINING
-            </button>
-
-            <a href="#programs" class="secondary-btn">
-                EXPLORE PROGRAMS
-            </a>
-
-        </div>
-
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="section-label">JAI BAJRANG BALI • DISCIPLINE • POWER</p>
+    <h1>BUILD THE <span>STRONGEST</span> VERSION OF YOU.</h1>
+    <p class="hero-text">Train your body. Strengthen your mind. Stay disciplined. Your transformation starts here.</p>
+    <div class="hero-buttons">
+      <button class="primary-btn" onclick="joinGym()">START TRAINING</button>
+      <a class="secondary-btn" href="#programs">EXPLORE PROGRAMS</a>
     </div>
-
-    <div class="hero-badge">
-        <strong>24/7</strong>
-        <span>FITNESS</span>
-    </div>
-
+  </div>
 </section>
-
-
-<!-- STATS -->
 
 <section class="stats">
-
-    <div>
-        <strong>500+</strong>
-        <span>Members</span>
-    </div>
-
-    <div>
-        <strong>15+</strong>
-        <span>Expert Trainers</span>
-    </div>
-
-    <div>
-        <strong>8+</strong>
-        <span>Training Programs</span>
-    </div>
-
-    <div>
-        <strong>5</strong>
-        <span>Years Strong</span>
-    </div>
-
+  <div><strong>500+</strong><span>Members</span></div>
+  <div><strong>15+</strong><span>Expert Trainers</span></div>
+  <div><strong>8+</strong><span>Training Programs</span></div>
+  <div><strong>5</strong><span>Years Strong</span></div>
 </section>
 
-
-<!-- ABOUT -->
-
-<section class="about">
-
-    <div class="about-image">
-        <img
-            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=85"
-            alt="Gym workout">
+<section class="about wall-section">
+  <div class="about-image">
+    <img src="assets/bajrang-meditation.jpg" alt="Bajrang Bali artwork">
+  </div>
+  <div class="about-content">
+    <p class="section-label">THE DHRUV FITNESS MINDSET</p>
+    <h2>MORE THAN A GYM.<br><span>A MINDSET.</span></h2>
+    <p>Built for people who refuse to stay average. Train with strength, focus and discipline inspired by Bajrang Bali.</p>
+    <div class="features">
+      <div><b>01</b><span>Modern Equipment</span></div>
+      <div><b>02</b><span>Expert Coaching</span></div>
+      <div><b>03</b><span>Personal Training</span></div>
+      <div><b>04</b><span>Disciplined Community</span></div>
     </div>
-
-    <div class="about-content">
-
-        <p class="section-label">
-            WHY DHRUV FITNESS
-        </p>
-
-        <h2>
-            MORE THAN A GYM.
-            <span>A MINDSET.</span>
-        </h2>
-
-        <p>
-            Dhruv Fitness is built for people who refuse to stay
-            average. Whether you're starting your fitness journey
-            or chasing your next personal record, we'll help you
-            push beyond your limits.
-        </p>
-
-        <div class="features">
-
-            <div>
-                <b>01</b>
-                <span>Modern Equipment</span>
-            </div>
-
-            <div>
-                <b>02</b>
-                <span>Expert Coaching</span>
-            </div>
-
-            <div>
-                <b>03</b>
-                <span>Personal Training</span>
-            </div>
-
-            <div>
-                <b>04</b>
-                <span>Supportive Community</span>
-            </div>
-
-        </div>
-
-    </div>
-
+  </div>
 </section>
-
-
-<!-- PROGRAMS -->
 
 <section class="programs" id="programs">
-
-    <div class="section-heading">
-
-        <p class="section-label">
-            TRAIN LIKE A BEAST
-        </p>
-
-        <h2>
-            OUR <span>PROGRAMS</span>
-        </h2>
-
-        <p>
-            Choose your path. Follow the process.
-            Become stronger every day.
-        </p>
-
-    </div>
-
-
-    <div class="program-grid">
-
-        <div class="program-card">
-
-            <div class="program-number">
-                01
-            </div>
-
-            <h3>STRENGTH</h3>
-
-            <p>
-                Build raw power and increase your
-                strength with progressive training.
-            </p>
-
-            <a href="#contact">
-                LEARN MORE →
-            </a>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <div class="program-number">
-                02
-            </div>
-
-            <h3>HYPERTROPHY</h3>
-
-            <p>
-                Structured workouts designed to
-                maximize muscle growth.
-            </p>
-
-            <a href="#contact">
-                LEARN MORE →
-            </a>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <div class="program-number">
-                03
-            </div>
-
-            <h3>FAT LOSS</h3>
-
-            <p>
-                Burn fat, improve conditioning and
-                build a stronger physique.
-            </p>
-
-            <a href="#contact">
-                LEARN MORE →
-            </a>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <div class="program-number">
-                04
-            </div>
-
-            <h3>PERSONAL TRAINING</h3>
-
-            <p>
-                One-on-one coaching tailored to
-                your fitness goals.
-            </p>
-
-            <a href="#contact">
-                LEARN MORE →
-            </a>
-
-        </div>
-
-    </div>
-
+  <div class="section-heading">
+    <p class="section-label">TRAIN LIKE A BEAST</p>
+    <h2>OUR <span>PROGRAMS</span></h2>
+    <p>Choose your path. Follow the process. Become stronger every day.</p>
+  </div>
+  <div class="program-grid">
+    <article class="program-card"><b>01</b><h3>STRENGTH</h3><p>Build raw power with progressive strength training.</p><a href="#contact">LEARN MORE →</a></article>
+    <article class="program-card"><b>02</b><h3>HYPERTROPHY</h3><p>Structured workouts designed for muscle growth.</p><a href="#contact">LEARN MORE →</a></article>
+    <article class="program-card"><b>03</b><h3>FAT LOSS</h3><p>Burn fat, improve conditioning and build a stronger physique.</p><a href="#contact">LEARN MORE →</a></article>
+    <article class="program-card"><b>04</b><h3>PERSONAL TRAINING</h3><p>One-on-one coaching tailored to your goals.</p><a href="#contact">LEARN MORE →</a></article>
+  </div>
 </section>
 
-
-<!-- MOTIVATION -->
-
-<section class="motivation">
-
-    <div class="motivation-overlay"></div>
-
-    <div class="motivation-content">
-
-        <p>
-            NO EXCUSES.
-        </p>
-
-        <h2>
-            TRAIN WITH THE
-            <span>POWER OF DISCIPLINE.</span>
-        </h2>
-
-        <p class="quote">
-            "Your body can withstand almost anything.
-            It's your mind you have to convince."
-        </p>
-
-    </div>
-
+<section class="wall-banner wall-reflection">
+  <div>
+    <p class="section-label">STRENGTH FROM WITHIN</p>
+    <h2>DISCIPLINE<br><span>NEVER FAILS.</span></h2>
+  </div>
 </section>
-
-
-<!-- TRAINERS -->
 
 <section class="trainers" id="trainers">
-
-    <div class="section-heading">
-
-        <p class="section-label">
-            MEET THE TEAM
-        </p>
-
-        <h2>
-            EXPERT <span>TRAINERS</span>
-        </h2>
-
-    </div>
-
-
-    <div class="trainer-grid">
-
-        <div class="trainer-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=85"
-                alt="Fitness trainer">
-
-            <div class="trainer-info">
-                <h3>ARJUN SHARMA</h3>
-                <p>Strength Coach</p>
-            </div>
-
-        </div>
-
-
-        <div class="trainer-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=85"
-                alt="Personal trainer">
-
-            <div class="trainer-info">
-                <h3>ROHAN VERMA</h3>
-                <p>Personal Trainer</p>
-            </div>
-
-        </div>
-
-
-        <div class="trainer-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=85"
-                alt="Gym coach">
-
-            <div class="trainer-info">
-                <h3>KARAN MEHRA</h3>
-                <p>Bodybuilding Coach</p>
-            </div>
-
-        </div>
-
-    </div>
-
+  <div class="section-heading">
+    <p class="section-label">MEET THE TEAM</p>
+    <h2>EXPERT <span>TRAINERS</span></h2>
+    <p>Train under coaches built for different goals.</p>
+  </div>
+  <div class="trainer-grid">
+    <article class="trainer-card">
+      <div class="trainer-photo"><img src="assets/trainer-thor.jpg" alt="Thor"></div>
+      <div class="trainer-info"><h3>THOR</h3><p>Strength Coach</p></div>
+    </article>
+    <article class="trainer-card">
+      <div class="trainer-photo"><img src="assets/trainer-wolverine.jpg" alt="Wolverine"></div>
+      <div class="trainer-info"><h3>WOLVERINE</h3><p>Personal Trainer</p></div>
+    </article>
+    <article class="trainer-card">
+      <div class="trainer-photo"><img src="assets/trainer-kriss.jpg" alt="Kriss"></div>
+      <div class="trainer-info"><h3>KRISS</h3><p>Fat Loss Coach</p></div>
+    </article>
+  </div>
 </section>
 
-
-<!-- MEMBERSHIP -->
+<section class="transformation" id="transformation">
+  <div class="section-heading">
+    <p class="section-label">THE RESULT</p><h2>BEFORE <span>→ AFTER</span></h2><p>Consistency changes everything.</p>
+  </div>
+  <div class="before-after">
+    <div class="ba-card"><img src="assets/before.jpg" alt="Before"><span>BEFORE</span></div>
+    <div class="ba-arrow">→</div>
+    <div class="ba-card"><img src="assets/after.jpg" alt="After"><span>AFTER</span></div>
+  </div>
+</section>
 
 <section class="plans" id="plans">
-
-    <div class="section-heading">
-
-        <p class="section-label">
-            MEMBERSHIP
-        </p>
-
-        <h2>
-            CHOOSE YOUR <span>PLAN</span>
-        </h2>
-
-    </div>
-
-
-    <div class="plan-grid">
-
-        <div class="plan-card">
-
-            <p class="plan-name">
-                BASIC
-            </p>
-
-            <h3>
-                ₹999
-                <small>/ MONTH</small>
-            </h3>
-
-            <ul>
-                <li>✓ Gym Access</li>
-                <li>✓ Cardio Area</li>
-                <li>✓ Basic Equipment</li>
-                <li>✓ Locker Facility</li>
-            </ul>
-
-            <button onclick="choosePlan('Basic')">
-                CHOOSE PLAN
-            </button>
-
-        </div>
-
-
-        <div class="plan-card popular">
-
-            <div class="popular-tag">
-                MOST POPULAR
-            </div>
-
-            <p class="plan-name">
-                PRO
-            </p>
-
-            <h3>
-                ₹1,499
-                <small>/ MONTH</small>
-            </h3>
-
-            <ul>
-                <li>✓ Everything in Basic</li>
-                <li>✓ Personal Training</li>
-                <li>✓ Diet Guidance</li>
-                <li>✓ Progress Tracking</li>
-            </ul>
-
-            <button onclick="choosePlan('Pro')">
-                CHOOSE PLAN
-            </button>
-
-        </div>
-
-
-        <div class="plan-card">
-
-            <p class="plan-name">
-                ELITE
-            </p>
-
-            <h3>
-                ₹2,499
-                <small>/ MONTH</small>
-            </h3>
-
-            <ul>
-                <li>✓ Everything in Pro</li>
-                <li>✓ 1-on-1 Coaching</li>
-                <li>✓ Custom Diet Plan</li>
-                <li>✓ Priority Support</li>
-            </ul>
-
-            <button onclick="choosePlan('Elite')">
-                CHOOSE PLAN
-            </button>
-
-        </div>
-
-    </div>
-
+  <div class="section-heading"><p class="section-label">MEMBERSHIP</p><h2>CHOOSE YOUR <span>PLAN</span></h2></div>
+  <div class="plan-grid">
+    <article class="plan-card"><p>BASIC</p><h3>₹999 <small>/ MONTH</small></h3><ul><li>✓ Gym Access</li><li>✓ Cardio Area</li><li>✓ Basic Equipment</li><li>✓ Locker Facility</li></ul><button onclick="choosePlan('Basic')">CHOOSE PLAN</button></article>
+    <article class="plan-card popular"><b class="popular-tag">MOST POPULAR</b><p>PRO</p><h3>₹1,499 <small>/ MONTH</small></h3><ul><li>✓ Everything in Basic</li><li>✓ Personal Training</li><li>✓ Diet Guidance</li><li>✓ Progress Tracking</li></ul><button onclick="choosePlan('Pro')">CHOOSE PLAN</button></article>
+    <article class="plan-card"><p>ELITE</p><h3>₹2,499 <small>/ MONTH</small></h3><ul><li>✓ Everything in Pro</li><li>✓ 1-on-1 Coaching</li><li>✓ Custom Diet Plan</li><li>✓ Priority Support</li></ul><button onclick="choosePlan('Elite')">CHOOSE PLAN</button></article>
+  </div>
 </section>
 
-
-<!-- CTA -->
-
-<section class="cta" id="contact">
-
-    <div>
-
-        <p class="section-label">
-            YOUR TRANSFORMATION STARTS TODAY
-        </p>
-
-        <h2>
-            READY TO BECOME
-            <span>STRONGER?</span>
-        </h2>
-
-        <p>
-            Take the first step. Join Dhruv Fitness today.
-        </p>
-
-        <button class="primary-btn" onclick="joinGym()">
-            JOIN DHRUV FITNESS
-        </button>
-
-    </div>
-
+<section class="cta">
+  <p class="section-label">YOUR TRANSFORMATION STARTS TODAY</p>
+  <h2>READY TO BECOME <span>STRONGER?</span></h2>
+  <p>Take the first step. Join Dhruv Fitness today.</p>
+  <button class="primary-btn" onclick="joinGym()">JOIN DHRUV FITNESS</button>
 </section>
 
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-    <div class="contact-info">
-
-        <p class="section-label">
-            GET IN TOUCH
-        </p>
-
-        <h2>
-            LET'S BUILD YOUR
-            <span>BEST SELF.</span>
-        </h2>
-
-        <p>
-            Have questions about membership or personal training?
-            Send us a message.
-        </p>
-
-        <div class="contact-details">
-
-            <p>📍 New Delhi, India</p>
-            <p>📞 +91 99999 99999</p>
-            <p>✉️ hello@dhruvfitness.com</p>
-
-        </div>
-
-    </div>
-
-
-    <form onsubmit="sendMessage(event)">
-
-        <input
-            type="text"
-            placeholder="Your Name"
-            required>
-
-        <input
-            type="tel"
-            placeholder="Phone Number"
-            required>
-
-        <input
-            type="email"
-            placeholder="Email Address"
-            required>
-
-        <select required>
-
-            <option value="">
-                Select Program
-            </option>
-
-            <option>
-                Strength Training
-            </option>
-
-            <option>
-                Hypertrophy
-            </option>
-
-            <option>
-                Fat Loss
-            </option>
-
-            <option>
-                Personal Training
-            </option>
-
-        </select>
-
-        <textarea
-            placeholder="Tell us about your fitness goal..."
-            rows="5"></textarea>
-
-        <button type="submit">
-            SEND MESSAGE
-        </button>
-
-    </form>
-
+<section class="contact" id="contact">
+  <div><p class="section-label">GET IN TOUCH</p><h2>LET'S BUILD YOUR <span>BEST SELF.</span></h2><p>Have questions about membership or personal training? Send us a message.</p><div class="contact-details">📍 New Delhi, India<br>📞 +91 88513 12909<br>✉️ dhruvdhakoliya97@gmail.com</div></div>
+  <form onsubmit="sendMessage(event)">
+    <input placeholder="Your Name" required><input type="tel" placeholder="Phone Number" required><input type="email" placeholder="Email Address" required>
+    <select required><option value="">Select Program</option><option>Strength Training</option><option>Hypertrophy</option><option>Fat Loss</option><option>Personal Training</option></select>
+    <textarea rows="5" placeholder="Tell us about your fitness goal..."></textarea><button type="submit">SEND MESSAGE</button>
+  </form>
 </section>
 
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="footer-logo">
-        <span>D</span>HRUV FITNESS
-    </div>
-
-    <p>
-        Built for those who refuse to quit.
-    </p>
-
-    <div class="socials">
-        Instagram &nbsp; | &nbsp; Facebook &nbsp; | &nbsp; YouTube
-    </div>
-
-    <p class="copyright">
-        © 2026 Dhruv Fitness. All Rights Reserved.
-    </p>
-
-</footer>
-
-
-<!-- WHATSAPP -->
-
-<a
-    class="whatsapp"
-    href="https://wa.me/919999999999"
-    target="_blank">
-
-    💬
-</a>
-
-
+<footer><div class="footer-logo"><span>D</span>HRUV FITNESS</div><p>Built for those who refuse to quit.</p><p class="copyright">© 2026 Dhruv Fitness. All Rights Reserved.</p></footer>
+<a class="whatsapp" href="https://wa.me/918851312909" target="_blank">💬</a>
 <script src="script.js"></script>
-
 </body>
 </html>
